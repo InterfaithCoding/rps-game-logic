@@ -129,25 +129,24 @@ Our function is going to have to take two parameters as input - the two choices 
 Let's figure out all the various outcomes of our comparison. One outcome is that the choice the user makes is equal to the choice the computer makes.
 ```
 var compare = function(choice1, choice2) {
-    if(choice1 === choice2) {
+    if(choice1 == choice2) {
         return "The result is a tie!";
     }
 };
 ```
-
 What if choice1 is "rock"? Given choice1 is "rock",
 
-a. if choice2 === "scissors", then "rock" wins.
-b. if choice2 === "paper", then "paper" wins.
+a. if choice2 == "scissors", then "rock" wins.
+b. if choice2 == "paper", then "paper" wins.
 
 How do we structure this? It's a bit different from what we have already seen. We will first have an ```if``` statement. And then the code inside that if statement will be another if statement!
 ```
 var compare = function(choice1, choice2) {
-    if(choice1 === choice2) {
+    if(choice1 == choice2) {
         return "The result is a tie!";
     }
-    else if(choice1 === "rock") {
-        if(choice2 === "scissors") {
+    else if(choice1 == "rock") {
+        if(choice2 == "scissors") {
             return "rock wins";
         }
         else {
@@ -158,11 +157,11 @@ var compare = function(choice1, choice2) {
 ```
 Now what if choice1 is "paper"? Given choice1 is "paper",
 
-a. if choice2 === "rock", then "paper" wins.
-b. if choice2 === "scissors", then "scissors" wins.
+a. if choice2 == "rock", then "paper" wins.
+b. if choice2 == "scissors", then "scissors" wins.
 ```
- else if(choice1 === "paper") {
-        if(choice2 === "rock") {
+ else if(choice1 == "paper") {
+        if(choice2 == "rock") {
             return "paper wins";
         }
         else {
@@ -174,31 +173,31 @@ b. if choice2 === "scissors", then "scissors" wins.
 ```
  Lastly, what if choice1 is "scissors"? Given choice1 is "scissors",
 
-a. if choice2 === "rock", then "rock" wins.
-b. if choice2 === "paper", then "scissors" wins.
+a. if choice2 == "rock", then "rock" wins.
+b. if choice2 == "paper", then "scissors" wins.
 ```
 var compare = function(choice1, choice2) {
     if(choice1 === choice2) {
         return "The result is a tie!";
     }
-    else if(choice1 === "rock") {
-        if(choice2 === "scissors") {
+    else if(choice1 == "rock") {
+        if(choice2 == "scissors") {
             return "rock wins";
         }
         else {
             return "paper wins";
         }
     }
-    else if(choice1 === "paper") {
-        if(choice2 === "rock") {
+    else if(choice1 == "paper") {
+        if(choice2 == "rock") {
             return "paper wins";
         }
         else {
             return "scissors wins";
         }
     }
-    else if(choice1 ==="scissors") {
-        if(choice2 === "rock") {
+    else if(choice1 =="scissors") {
+        if(choice2 == "rock") {
             return "rock wins";
         }
         else {
