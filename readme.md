@@ -7,8 +7,7 @@ To keep it simple to deploy our app to the web, we are going to use JavaScript t
 
 The main programming concepts that we need to build the game logic, such as declaring variables, conditional logic and if/else statements, are all concepts that we encountered when learning Python. The main differences are going to be in the syntax, so pay close attention.
 
-The Rules of the Game
-===================== 
+###The Rules of the Game
 
 Rock paper scissors is a classic 2 player game. Each player chooses either rock, paper or scissors. The possible outcomes:
 
@@ -20,8 +19,7 @@ We'll add in lizard and spock soon - but let's get an initial version of our gam
 
 Let's think about how our game is going to work in plain English, before we even start thinking about how we are going to code it. We will call this our 'prep code'. Discuss this with your partner what our prep code should look like before reading the next section. 
 
-Prep code
-==========
+###Prep code
 
 Our code will break the game into 4 sections:
 
@@ -30,12 +28,12 @@ Our code will break the game into 4 sections:
 3. We need to compare the choices to determine a winner
 4. We need to declare the winner
 
-Writing the code
-================
+###Writing the code
+
 Now we have a solid idea of how our programme is going to work, let's think about the actual code we want to write to achieve this.
 
-1. We start by first asking the user for their choice. 
-####
+####1. We start by first asking the user for their choice. 
+
 
 In the initial version of our game logic, this is going to be a console application i.e. we are going to get the user choice, by simply asking them for it. Remember how we used 'input' in Python to get user input? On our final website though, we will get their choice from the icon that they click. We will learn how we can do this using JavaScript next week, when we finally tie the front and back-end of our website together. 
 
@@ -53,8 +51,8 @@ To get user input in JavaScript we use the inbuilt JavaScript function ```prompt
 
 ```var userChoice = prompt("Do you choose rock, paper or scissors?");```
 
-2. We next want to get our computer's choice. 
-####
+####2. We next want to get our computer's choice. 
+
 We want our computer to make a decision randomly. Fortunately for us, JavaScript has an inbuilt random function. 
 
 If we declare a variable and make it equal to ```Math.random()```, that variable will equal a number between 0 and 1.
@@ -75,13 +73,11 @@ if (computerChoice <= 0.33) {
 ```
 We are changing the value of computerChoice based on the rules that we stated above. You do not have to use the keyword var when changing the value of a variable that already exists.
 
-3. We now have a user choice and a computer choice. We need to create a function to compare these two values, and to decide on a winner based on that comparison. 
-####
+####3. We now have a user choice and a computer choice. We need to create a function to compare these two values, and to decide on a winner based on that comparison. 
 
 First let's explore what functions are, and how we can write them in JavaScript
 
-Functions in JavaScript
-#####
+#####Functions in JavaScript
 
 Programming is similar to baking cakes. Imagine you are trying to teach your friend how to bake different types of cakes.
 
@@ -97,8 +93,8 @@ Bakers (and programmers!) are lazy and don't want to have to write out exactly t
 
 A function takes in inputs, does something with them, and produces an output.
 
-So how do we write functions in JavaScript?
-#####
+#####So how do we write functions in JavaScript?
+
 We first need to declare function using ```var```, and then give it a name e.g. ```bakeCake```. The name should begin with a lowercase letter and the convention is to use lowerCamelCase where each word (except the first) begins with a capital letter.
 Then we use the ```function``` keyword to tell the computer that you are making a function.
 
@@ -121,8 +117,8 @@ To use the function, we call the function by just typing the function's name, an
 bakeCake(chocolateCake)
 ```
 
-Compare function
-================
+####Compare function
+
 Now we know a bit about functions in JavaScript we can write our 'compare' function. 
 
 Our function is going to have to take two parameters as input - the two choices that have been made - and will return the winning choice to us. The winning choice is our output. 
