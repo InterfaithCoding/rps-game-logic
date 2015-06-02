@@ -75,7 +75,9 @@ if (computerChoice <= 0.33) {
 ```
 We are changing the value of computerChoice based on the rules that we stated above. You do not have to use the keyword ```var``` when changing the value of a variable that already exists.
 
-####3. We now have a user choice and a computer choice. We need to create a function to compare these two values, and to decide on a winner based on that comparison. 
+####3. We now have a user choice and a computer choice. 
+
+We need to create a function to compare these two values, and to decide on a winner based on that comparison. 
 
 First let's explore what functions are, and how we can write them in JavaScript
 
