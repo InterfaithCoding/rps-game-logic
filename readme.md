@@ -139,6 +139,7 @@ var compare = function(choice1, choice2) {
 What if choice1 is "rock"? Given choice1 is "rock",
 
 a. if choice2 == "scissors", then "rock" wins.
+
 b. if choice2 == "paper", then "paper" wins.
 
 How do we structure this? It's a bit different from what we have already seen. We will first have an ```if``` statement. And then the code inside that if statement will be another if statement!
@@ -160,6 +161,7 @@ var compare = function(choice1, choice2) {
 Now what if choice1 is "paper"? Given choice1 is "paper",
 
 a. if choice2 == "rock", then "paper" wins.
+
 b. if choice2 == "scissors", then "scissors" wins.
 ```
  else if(choice1 == "paper") {
@@ -176,6 +178,7 @@ b. if choice2 == "scissors", then "scissors" wins.
  Lastly, what if choice1 is "scissors"? Given choice1 is "scissors",
 
 a. if choice2 == "rock", then "rock" wins.
+
 b. if choice2 == "paper", then "scissors" wins.
 ```
 var compare = function(choice1, choice2) {
@@ -213,4 +216,4 @@ compare(userChoice, computerChoice); //here we call the function
 
 This is what our final compare function looks like. 
 
-There is much to improve about this function. Think about what other pieces of information would be useful for our game or players to know? If you discuss with you partner, we can try and implement these features in our final version next week.
+We can definitely improve this function. For example instead of saying which instrument wins, we could declare the player that wins. We would print out a statement such as "The computer destroyed your scissors with a rock". Think about what other pieces of information would be useful for our game or players to know? If you discuss with you partner, we can try and implement these features in our final version next week.
